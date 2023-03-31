@@ -1,0 +1,132 @@
+/* 背景 */
+body {
+    background-image: url(./image/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* 导航栏 */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #7c1111;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: Lishu, "隶书", serif;
+    font-size: 20px;
+    z-index: 1;     /* 让导航栏始终在最上层 */
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #170303;
+  }
+  
+  .active {
+    background-color: #870c0c;
+  }
+  
+  /* logo和标题 */
+  .container {
+    display: flex;
+    margin-top: 50px; /* 调整容器距离导航栏的距离 */
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin: 100px;
+  }
+  
+  .logo img {
+    width: 150px;
+    height: 150px;
+ 
+    }
+  .left-image,
+  .right-image {
+    width: 80px;
+    height: auto;
+    }
+
+
+/* 内容 */
+div.transbox
+{
+  width: 1200px;
+  height: 800px;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #dad7cb81;
+  opacity:1;
+  
+}
+
+.transbox {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    padding: 40px;  /* 内容与四周距离 */
+    padding-top: 40px; /* 内容与上边框距离 */
+    	position:fixed;
+    
+}
+
+.transbox img {
+    width: 50%;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    float:left;
+    padding-right: 30px; /* 文字与图片距离 */
+    padding-top: 130px;
+}
+
+.transbox img:hover {
+    opacity: 1;
+}
+
+h1 {
+    text-align:center;
+    font-family: Kaiti, "楷体", serif;
+    opacity:0.8;
+}
+div.transbox p1
+{
+  margin: 30px 40px;
+  font-family: Lishu, "隶书", serif;
+  color: #000000;
+  opacity:1.5;
+  font-size: 20px;
+  line-height:150%;
+  opacity:0.8;
+  
+}
+div.transbox p2
+{
+  margin: 30px 40px;
+  font-family: "Courier New", serif;
+  color: #000000;
+  opacity:1.5;
+  font-size: 14px;
+  line-height:150%;
+}
+  
+  
+  
